@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    <h3>Escreva uma função callback que recebe uma string e retorna essa string com apenas a primeira letra em maiúscula.<br> Certifique-se de que ele pode pegar strings que são minúsculas, UPPERCASE ou BoTh</h3>
+    <script>
+        function capitalize(text){
+            return text[0].toUpperCase() + text.substr(1);
+        }
+        console.log(capitalize("isabella"));
+    </script>
+   <ul>
+       <li>No código acima, primeiro nós pegamos a primeira letra através de str[0].</li>
+       <li>Alternativamente você pode fazer o mesmo usando str.charAt(0).</li>   
+       <li>Depois fazemos a conversão para maiúsculo usando toUpperCase().</li>  
+       <li>E por último, concatenamos com a mesma string e removemos a primeira letra usando substr(1).</li> 
+   </ul>
+</body>
+</html>
